@@ -72,6 +72,7 @@ bool threadpool<T>::append(T* request)
     m_queuestat.post();
     return true;
 }
+
 template<typename T>
 void threadpool<T>::worker(void *arg)
 {
